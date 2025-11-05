@@ -1,4 +1,4 @@
-from ..utilities.csvmanager import load_csv, save_csv
+from utilities.csvmanager import load_csv, save_csv
 
 def add_movie():
     title = input("Entrez le titre du film: ").strip().capitalize() or "n/a"
@@ -18,4 +18,7 @@ def add_movie():
         'genre' : genre,
         'vu' : seen
     })
-    
+
+    save_csv(existing_movies)
+    print(f"Votre filmothèque a été sauvegardé ! {title} a été ajouté.")
+

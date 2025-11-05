@@ -30,7 +30,7 @@ def load_csv():
     if not os.path.exists(CSV_FILE_PATH):
         return[]
     data = []
-    with open(CSV_FILE_PATH, "r", encoding="utf-8") as file:
+    with open(CSV_FILE_PATH, "r", encoding="utf-8" ) as file:
         reader = csv.DictReader(file)
         for movie in reader :
             data.append({
