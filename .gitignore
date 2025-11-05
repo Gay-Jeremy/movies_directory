@@ -1,0 +1,217 @@
+# Créé par https://www.toptal.com/developers/gitignore/api/windows,git,python
+# Modifier à https://www.toptal.com/developers/gitignore? templates=windows,git,python
+
+### Git ###
+# Créé par git pour les sauvegardes. Pour désactiver les sauvegardes dans Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Créé par git lors de l'utilisation d'outils de fusion pour les conflits
+*. SAUVEGARDE. *
+*. BASE. *
+*. LOCAL. *
+*. À DISTANCE. *
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### Python ###
+# Byte-compiled / optimisé / DLL fichiers
+__pycache__/
+*.py[moudoule]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / emballage
+. Python
+construire/
+develop-eggs/
+dist/
+Téléchargements/
+oeufs/
+.œufs/
+Lib/
+lib64/
+parties/
+Sdist/
+var/
+roues/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFESTE
+
+# PyInstaller
+# Habituellement, ces fichiers sont écrits par un script python à partir d'un modèle
+# avant que PyInstaller ne construise l'exe, de manière à y injecter des informations de date/autres.
+*.manifest
+*.spec
+
+# Journal d'installation
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Rapports de test/de couverture de l'unité
+htmlcov/
+.tox/
+.nox/
+.couverture
+.couverture. *
+.cache
+nosests.xml
+couverture.xml
+*.cover
+*.py, couverture
+.hypothèse/
+.pytest_cache/
+Couverture/
+
+# Traductions
+*.mo
+*.pot
+
+# Django trucs:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flok stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Documentation Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+cible/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profil_default/
+ipython_config.py
+
+# pyenv
+# Pour une bibliothèque ou un package, vous voudrez peut-être ignorer ces fichiers puisque le code est
+# destiné à fonctionner dans plusieurs environnements; sinon, vérifiez-les dans:
+# .python-version
+
+# pipenv
+# Selon pypa/pipenv#598, il est recommandé d'inclure Pipfile.lock dans le contrôle de version.
+# Cependant, en cas de collaboration, si vous avez des dépendances ou des dépendances spécifiques à la plate-forme
+# n'ayant pas de support multiplateforme, pipenv peut installer des dépendances qui ne fonctionnent pas, ou pas
+# installer toutes les dépendances nécessaires.
+#Pipfile.lock
+
+# poésie
+# Semblable à Pipfile.lock, il est généralement recommandé d'inclure poetry.lock dans le contrôle de version.
+# Ceci est particulièrement recommandé pour les paquets binaires pour assurer la reproductibilité, et est plus
+# communément ignoré pour les bibliothèques.
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+# Semblable à Pipfile.lock, il est généralement recommandé d'inclure pdm.lock dans le contrôle de version.
+#pdf.lock
+# pdm stocke les configurations à l'échelle du projet dans .pdm.toml, mais il est recommandé de ne pas l'inclure
+# dans le contrôle de version.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; utilisé par exemple github.com/David-OConnor/pyflow et github.com/pdm-project/pdm
+__pypackages__/
+
+# Céleri
+calendrier de celerybeat
+Celerybeat.pid
+
+# SageMath fichiers analysés
+*.sage.py
+
+# Environnements
+.env
+.venv
+Env/
+Venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Paramètres du projet Spyder
+.spyderproject
+.spyproject
+
+# Paramètres du projet de corde
+.ropeproject
+
+# documentation de mddocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Vérificateur de type Pyre
+.pyre/
+
+# analyseur de type statique pytype
+.pytype/
+
+# Symboles de débogage Cython
+cython_debug/
+
+# PyCharm
+# JetBrains modèle spécifique est maintenu dans un JetBrains.gitignore séparé qui peut
+# être trouvé à https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# et peut être ajouté à la gitignore globale ou fusionné dans ce fichier.  Pour un plus nucléaire
+# option (non recommandé) vous pouvez décommenter ce qui suit pour ignorer le dossier d'idée entier.
+#.idea/
+
+### Python Patch ###
+# Dossier de configuration locale de poésie - https://python-poetry.org/docs/configuration/#local-configuration
+poésie.toml
+
+# ruff
+.ruff_cache/
+
+# Fichiers de configuration LSP
+pyrightconfig.json
+
+### Windows ###
+# Fichiers de cache de miniature Windows
+Pouces.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Fichier de Dump
+*.stackdump
+
+# Dossier config fichier
+[Dd]esktop.ini
+
+# Corbeille utilisée sur les partages de fichiers
+$RECYCLE.BIN/
+
+# Fichiers Windows Installer
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Les raccourcis Windows
+*.lnk
+
+# Fin de https://www.toptal.com/developers/gitignore/api/windows,git,python
