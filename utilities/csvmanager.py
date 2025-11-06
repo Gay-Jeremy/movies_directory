@@ -16,7 +16,8 @@ def save_csv(data):
             'genre' : movie['genre'],
             'vu' : 'oui' if movie['vu'] else 'non'
         })
-    with open(CSV_FILE_PATH, "w", encoding="utf-8") as file:
+        
+    with open(CSV_FILE_PATH, "w", encoding="utf-8", newline="") as file:
             writer=csv.DictWriter(file, fieldnames=FIELD_NAMES)
             writer.writeheader()
             writer.writerows(formatted_data)
@@ -30,7 +31,7 @@ def load_csv():
     if not os.path.exists(CSV_FILE_PATH):
         return[]
     data = []
-    with open(CSV_FILE_PATH, "r", encoding="utf-8" ) as file:
+    with open(CSV_FILE_PATH, "r", encoding="utf-8", newline="" ) as file:
         reader = csv.DictReader(file)
         for movie in reader :
             data.append({

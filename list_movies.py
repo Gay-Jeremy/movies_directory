@@ -6,4 +6,4 @@ def list_movies():
     print("🍿 Les films enregistrés :")
 
     for movie in movies :
-        print(f"->{movie['titre']} {movie['année']} {movie['genre']} {movie['vu']} ")
+        print(f"-> {movie['titre']}, {movie['année']}, {movie['genre']}, {'VU' if movie['vu'] else ''}")

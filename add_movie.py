@@ -11,6 +11,11 @@ def add_movie():
     else :
         year = 0
 
+    if seen == "O" or seen == "o":
+        seen = 'Oui'
+    else:
+        seen = 'Non'
+
     existing_movies = load_csv()
     existing_movies.append ({
         'titre' : title,
